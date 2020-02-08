@@ -2,7 +2,7 @@ const env = process.env;
 //console.log(env);
 
 export default {
-  port: env.port || 8080
+  port: env.port || 1712
 };
 
 export const nodeEnv = env.NODE_ENV || "development";

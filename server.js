@@ -39,6 +39,9 @@ import apiRouter from "./api";
 //import fs from "fs"; - File system module
 const server = express();
 
+//setting up view engine as ejs(Effective javascript), express searches for the ejs templates under view folder  after setting up this
+server.set("view engine", "ejs");
+
 server.get("/", (req, res) => {
   res.send("Hello express");
 });
@@ -63,6 +66,12 @@ server.get("/about.html", (req, res) => {
 server.use(express.static("public"));
 
 server.use("/api", apiRouter);
+
+server.get("/ejs", (req, res) => {
+  res.render("index", {
+    content: "     Combo of express and <em>ejs</em>            "
+  });
+});
 
 server.listen(config.port, () => {
   console.info("Express listening on port", config.port);

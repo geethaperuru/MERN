@@ -7,6 +7,7 @@
     "start": "nodemon --exec babel-node server.js --ignore public/"
   },
   "dependencies": {
+    "ejs": "3.0.1",
     "express": "^4.17.1",
     "mongodb": "3.5.2",
     "react": "16.12.0",

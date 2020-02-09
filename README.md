@@ -120,7 +120,7 @@ https.get('https://encrypted.google.com/', (res) => {
 });
 
 ```
-## Request req events<br/>
+## Request req events<br/>(https://sailsjs.com/documentation/reference)
 - req.body-An object containing text parameters from the parsed request body, defaulting to {}.
 - req.cookies-An object containing all of the unsigned cookies from this request (req). (eg : req.cookies.chocolatechip;)
 - req.headers-An object containing the predefined/custom header given in the current request.

@@ -173,7 +173,30 @@ https.get('https://encrypted.google.com/', (res) => {
       res.type('application/json');
       res.type('png');
     ```
-
+```  
+  EJs(https://ejs.co/)
+  dynamic template lang for embedded js.used for server rendering of js frondend components.
+  supports partial views
+  
+  Instead of express js we can use new koa framework which uses middleware generater functions and provides higher level trigger on top of the low level middleware layer
+  
+  Hapi js
+  Which claims to be focus on delivering high businessvalue
+  
+  sails js
+  inspired by mvc patterns in ruby
+  
+  Pug 
+  uses light weight code with indendation
+  
+  handlebars
+  focuses on sematic templates
+  
+  React
+  takes the approach of generating html from javascript
+  represented as javascript object tree
+```  
+  
  
   
   
